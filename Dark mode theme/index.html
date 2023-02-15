@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <button id="switch-mode">Dark Mode</button>
+      </header>
+      <main>
+        <h1>Welcome to my website</h1>
+        <p>This is some sample content</p>
+      </main>
+    </div>
+  </body>
+  <script>
+    const switchMode = document.getElementById("switch-mode");
+const container = document.querySelector(".container");
+
+switchMode.addEventListener("click", () => {
+  container.classList.toggle("dark-mode");
+  switchMode.textContent = (switchMode.textContent === "Dark Mode") ? "Light Mode" : "Dark Mode";
+});
+
+  </script>
+</html>
